@@ -1,0 +1,21 @@
+:root {
+  --header-height: 56px;
+  --header-x-padding: 1rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header-x-padding: 8rem;
+  }
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-white);
+  height: var(--header-height);
+  padding: 0 var(--header-x-padding);
+}
+

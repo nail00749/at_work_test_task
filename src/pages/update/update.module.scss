@@ -1,0 +1,40 @@
+.page_wrapper {
+  --padding-x: 1rem;
+  --padding-bottom: 2rem;
+  --gap-container: 2rem;
+  --margin-top: 20px;
+  --margin-top-button: 14px;
+
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+  padding-bottom: var(--padding-bottom);
+
+
+  width: 100%;
+
+  .back_button {
+    margin-top: var(--margin-top-button);
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-container);
+    margin-top: var(--margin-top);
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .page_wrapper {
+    --padding-x: 10rem;
+    --gap-container: 2.5rem;
+    --margin-top: 24px;
+    --margin-top-button: 20px;
+
+    .container {
+      flex-direction: row;
+    }
+  }
+}

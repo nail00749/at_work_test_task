@@ -1,0 +1,14 @@
+
+.image_container {
+  display: flex;
+  justify-content: center;
+
+  .image {
+    width: 84px;
+    height: 84px;
+  }
+}
+
+.title {
+  margin-top: 16px;
+}

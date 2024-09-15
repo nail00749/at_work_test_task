@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100%;
+
+  input {
+    width: 100%;
+    height: 42px;
+    outline: none;
+    border-radius: var(--rounded-border);
+    border: var(--border-width) solid var(--color-grey4);
+    padding: 0 8px 0 16px;
+    margin-top: 10px;
+    color: var(--color-black);
+
+    &::placeholder {
+      color: var(--color-grey2)
+    }
+
+    &:focus + .cross,
+    &:not(:placeholder-shown) + .cross
+    {
+      display: block;
+    }
+
+  }
+
+  span {
+    position: relative;
+    height: 100%;
+
+    .cross {
+      display: none;
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: var(--icon-size);
+      cursor: pointer;
+      outline: none;
+      border: none;
+      background: transparent;
+    }
+  }
+}

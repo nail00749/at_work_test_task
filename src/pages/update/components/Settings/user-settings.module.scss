@@ -1,0 +1,34 @@
+.setting_wrapper {
+  --margin-top: 1.5rem;
+  --padding: 28px;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-white);
+  border-radius: 16px;
+  margin-top: var(--margin-top);
+  padding: var(--padding);
+
+  .avatar {
+    --avatar-width: 287px;
+    --avatar-height: 187px;
+
+    width: var(--avatar-width);
+    height: var(--avatar-height);
+    border-radius: 8px;
+  }
+
+  .category {
+    margin-top: 40px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .setting_wrapper {
+    --margin-top: 0;
+    --padding: 40px;
+  }
+}

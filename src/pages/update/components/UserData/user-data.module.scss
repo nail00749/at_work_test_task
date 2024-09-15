@@ -1,0 +1,37 @@
+
+.wrapper {
+  --padding: 28px;
+  --margin-top: 20px;
+  --padding-x-fields: 28px;
+
+  background: var(--color-white);
+  padding: var(--padding);
+  border-radius: 16px;
+
+  .fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: var(--margin-top);
+
+    .button {
+      align-self: stretch;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    --margin-top: 28px;
+    --padding: 40px;
+
+    .fields {
+      .button {
+        align-self: start;
+      }
+
+    }
+  }
+
+}

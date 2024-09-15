@@ -1,0 +1,21 @@
+.page_wrapper {
+  --padding-x-home-page: 15px;
+
+  padding-top: 40px;
+  padding-left: var(--padding-x-home-page);
+  padding-right: var(--padding-x-home-page);
+
+  .list_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+  }
+}
+
+@media (min-width: 1024px) {
+  .page_wrapper {
+    --padding-x-home-page: 8rem;
+  }
+}
+

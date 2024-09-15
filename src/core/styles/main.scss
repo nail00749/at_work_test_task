@@ -1,5 +1,64 @@
+@use './vars.scss' as *;
+@use './typography.scss' as *;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Manrope sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#root {
+  background: var(--color-grey5);
+  height: 100vh;
+  overflow: auto;
+}
+
+
+@font-face {
+  font-family: Manrope;
+  src: url(public/fonts/Manrope/Manrope-VariableFont_wght.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  fill: var(--color-black);
+
+  &:hover {
+    fill: var(--color-accent);
+  }
+
+  &:active {
+    fill: var(--color-accent);
+  }
+}
+
+@media (min-width: 1024px) {
+  .icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

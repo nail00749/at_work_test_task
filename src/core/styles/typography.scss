@@ -1,0 +1,93 @@
+.title {
+  font-family: Manrope sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32.78px;
+}
+
+.headline {
+  font-family: Manrope sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.59px;
+}
+
+.text1-semi {
+  font-family: Manrope sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.86px;
+
+}
+
+.text1-medium {
+  font-family: Manrope sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.86px;
+}
+
+.text2-semi {
+  font-family: Manrope sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.12px;
+}
+
+.text2-medium {
+  font-family: Manrope sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+}
+
+.caption {
+  font-family: Manrope sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 13.66px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32.78px;
+  }
+
+  .headline {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27.32px;
+  }
+
+  .text1-semi {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.59px;
+  }
+
+  .text1-medium {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.59px;
+  }
+
+  .text2-semi {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.86px;
+  }
+
+  .text2-medium {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+  }
+
+  .caption {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.12px;
+  }
+}

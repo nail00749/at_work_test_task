@@ -1,0 +1,29 @@
+:root {
+  --user_avatar-size: 20px;
+}
+
+.icons {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .icons {
+    display: flex;
+  }
+}
+
+.menu_wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+
+  .user_avatar {
+    width: var(--user_avatar-size);
+    height: var(--user_avatar-size);
+    border-radius: 50%;
+  }
+
+  .nickname {
+    margin-left: 0.5rem;
+  }
+}

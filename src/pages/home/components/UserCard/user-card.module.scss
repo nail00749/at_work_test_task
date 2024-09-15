@@ -1,0 +1,74 @@
+.user_card_wrapper {
+  --avatar-width: 130px;
+  --avatar-height: 120px;
+
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 16px;
+
+
+  .avatar {
+    width: var(--avatar-width);
+    height: var(--avatar-height);
+    border-radius: 8px;
+  }
+
+  .avatar_archive {
+    filter: grayscale(1);
+  }
+
+  .info {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    .name_wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .name {
+      color: var(--color-accent);
+    }
+
+    .name_archive {
+      color: var(--color-grey2);
+    }
+
+    .company {
+      color: var(--color-grey2);
+      padding-top: .25rem;
+    }
+
+    .city {
+      color: var(--color-grey3);
+      margin-top: 12px;
+    }
+
+    .city_archive {
+      color: var(--color-grey4);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .user_card_wrapper {
+    --avatar-width: 112px;
+
+    flex-direction: row;
+
+    .info {
+      margin-top: 0;
+      margin-left: 1.25rem;
+    }
+
+    .city {
+      margin-top: 0;
+    }
+  }
+}

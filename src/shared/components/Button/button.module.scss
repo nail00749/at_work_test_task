@@ -1,0 +1,17 @@
+.button {
+  background: var(--color-black);
+  padding: 12px 42px;
+  color: var(--color-white);
+  border-radius: var(--rounded-border);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+@media not all and (hover: none) {
+  .button:hover {
+    background: var(--color-grey5);
+    color: var(--color-grey2);
+  }
+}

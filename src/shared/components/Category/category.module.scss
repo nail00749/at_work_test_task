@@ -1,0 +1,25 @@
+.list_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.category_wrapper {
+  color: var(--color-grey3);
+
+  &:hover {
+    color: var(--color-accent);
+  }
+
+  :active {
+    color: var(--color-black);
+  }
+
+  .line {
+    height: 1px;
+    width: 100%;
+    background: var(--color-grey4);
+    margin-top: 12px;
+  }
+
+}
